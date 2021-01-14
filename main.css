@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    margin:0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.hide{
+    opacity: 0;
+}
+
+
+
+
+/*Nav CSS*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: transparent;
+    opacity: 100%;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:900;
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.nav-links li{
+    list-style: none;
+    text-decoration-line:underline;
+}
+
+.nav-links a{
+    font-size: 12px;
+    text-decoration: none;
+    color:white;
+    font-family: 'Lato', cursive;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.nav-links a:hover{
+    color: black;
+}
+
+
+.menu{
+    display: none;
+}
+
+.menu div{
+    width:25px;
+    height: 5px;
+    background-color: black;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+
+/*Section 1 Los Angeles*/
+
+#mountain-1{
+    background-image: url(mountains.png);
+    background-color: #d7dae5;
+    background-position:center top;
+    background-repeat: no-repeat;
+    height:110vh;
+    background-size: cover;
+}
+
+.black{
+    color: #4d4d4d;
+    font-size: 115px;
+}
+
+.gradient{
+    font-size: 124px;
+    background: -webkit-linear-gradient(#414f6b, #2a3346);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#history-bg{
+    background-image: url(history-bg.png);
+    background-color: #d7dae5;
+    background-position:center top;
+    background-repeat: no-repeat;
+    height:140vh;
+    background-size: cover;
+}
+
+.space-history{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#mountain-3{
+    background-image: url(mountain3.png);
+    background-color: #d7dae5;
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    height:80vh;
+    background-size: cover;
+}
+
+.blue-line{
+    background-color: #414f6b;
+    height:40px;
+}
+
+.mtn-btn-active{
+    background-color: #b0b4be;
+    color: #414f6b;
+    font-family: "Oswald", sans-serif;
+    text-decoration: underline;
+    border:none;
+    font-size: 20px;
+}
+
+.mtn-btn{
+    background-color: #414f6b;
+    color: #b0b4be;
+    border:none;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.table{
+    background-color: rgba(255,255,255, 0.7);
+    margin-top: 10vh;
+    margin-left: 20px;
+}
+
+.bebas{
+    font-family: 'bebas neue', sans-serif;
+}
+
+tr, td{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+#schedule{
+    font-family: 'Oswald', 'sans-serif';
+    color: #414f6b;
+    font-size: 32px;
+}
+
+.headers{
+    font-size: 135px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.shade41{
+    color: #414f6b;
+}
+
+.opacity{
+    opacity: 75%;
+}
+
+.title{
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.position{
+    margin-left: 18vh;
+}
+
+.vertical-center{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+    text-align: center;
+}
+
+#carasoul{
+    height:195px;
+    background-color:rgba(65, 79, 107, 0.75);
+}
+
+
+/*Footer CSS*/
+#footer{
+    background-color: #414f6b;
+    height: 74px;
+    text-align: center;
+    color: #4a5978;
+}
+
+.lato{
+    font-family: 'Lato', cursive;
+}
+
+.light-blue{
+    color: #63769d;
+}
+
+.section-margin{
+    margin:-6vh 10vh 0vh 10vh;
+    font-size: 16px;
+}
+
+.subtitle{
+    margin-left: -35px;
+    position:relative;
+    bottom: 4vh;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo-placement{
+    margin-left: -78px;
+    position:relative;
+    top: 2.5vh;
+    font-size: 22px;
+}
+.font21{
+    font-size:21px;
+}
+
+.copyright{
+    font-size: 12px;
+}
+
+
+/* Screen Sizes */
+@media screen and (max-width: 768px){
+
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);  
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .menu{
+        display: block;
+    }
+
+
+}
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+   
+}
