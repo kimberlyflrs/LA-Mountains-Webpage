@@ -30,8 +30,8 @@
 <!--Nav-->
         <nav class="sticky">
             <div class="logo">
-                <img src="./Logo.png">
-                <p class="bebas"><span class="font21">LOSANGELES</span><span class="logo-placement">MOUNTAINS</span></p>
+                <img src="./Logo.png" class="logo-image">
+                <p class="bebas logo-title"><span class="font21 black">LOSANGELES</span><span class="logo-placement shade41">MOUNTAINS</span></p>
             </div>
             <ul class="nav-links">
                 <li class="nav-item"><a href="#history-section" >01. HISTORY</a></li>
@@ -49,8 +49,7 @@
         <div class="row title-position" id="mountain-1">
             <div class="col-12">
                 <div class="header">
-                    <h1 class="bebas black">Los Angeles</h1>
-                    <h1 class="bebas gradient">Mountains</h1>
+                    <h1 class="title-margin"> <span class="bebas black font115 title-margin">LosAngeles</span><br><span class="bebas font124 gradient">Mountains</span></h1>
                 </div>
             </div>
         </div>
@@ -71,26 +70,37 @@
                     </div>
                 </div>
             </div>
-            <div class="row" id="carasoul"> <!--put this content at the bottom of the container-->
-                <div class="col">
+
+            <div class="row" id="carasoul">
+                <div class="col-12 vertical-center">
                 <!--display the images in a row, display flex possibly-->
-                    <p>image hiker</p>
-                    <p>image mtnside</p>
-                <!--this is a separate row-->
-                    <div>Navigation circles</div>
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="img-cara" src="hiker.png" alt="hiker"/>
+                            <img class="img-cara" src="mtnside.png" alt="mountain side"/>                    
+                            <img class="img-cara" src="hiker.png" alt="hiker"/>
+                            <img class="img-cara" src="mtnside.png" alt="mountain side"/>
+                        </div>
+                        <div class="col-12 nav-circles">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!--Team Section-->
+    <!--Climb Section-->
     <section id="team-section">
-        <div class="row section-space">
+        <div class="row">
             <div class="col-lg-2 col-md-2 col-sm-12 offset-lg-2 offset-md-2">
-                <p class="shade41"><span class="headers opacity">02.</span><span class="title subtitle">Climb</span></p>
+                <p class="offset40"><span class="headers shadea0">02.</span><span class="title subtitle shade41">Climb</span></p>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 vertical-center">
-                <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, 
+            <div class="col-lg-6 col-md-5 col-sm-12 vertical-center">
+                <p class="offset40">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, 
                 gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor 
                 nec congue.</p>
             </div>
@@ -141,14 +151,14 @@
 
     <!--Footer-->
     <footer class="row align-items-center" id="footer">
-        <div class="col offset-sm-2">
+        <div class="col-lg-2 col-md-2 col-sm-12 offset-lg-2 vertical-center">
             <div class="logo">
-                <img src="blue-logo.png">
-                <p class="bebas"><span class="font21">LOSANGELES</span><span class="logo-placement">MOUNTAINS</span></p>
+                <img src="blue-logo.png" class="logo-image">
+                <p class="bebas light-blue logo-title"><span class="font21">LOSANGELES</span><span class="logo-placement">MOUNTAINS</span></p>
             </div>
         </div>
 
-        <div class="col offset-sm-4">
+        <div class="col-lg-2 col-md-2 col-sm-12 offset-lg-4">
             <p class="lato light-blue copyright">Copyright 2016. All Rights Reserved</p>
         </div>
     </footer>

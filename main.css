@@ -76,6 +76,15 @@ nav{
     transition: all 0.3s ease;
 }
 
+.logo-image{
+    height:50px;
+    width: 50px;
+}
+
+.logo-title{
+    padding-left: 5px;
+}
+
 
 /*Section 1 Los Angeles*/
 
@@ -90,16 +99,26 @@ nav{
 
 .black{
     color: #4d4d4d;
+}
+
+.font115{
     font-size: 115px;
 }
 
-.gradient{
+.font124{
     font-size: 124px;
+}
+
+.gradient{
     background: -webkit-linear-gradient(#414f6b, #2a3346);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.title-margin{
+    line-height: 75px;
+    letter-spacing: 10px;
+}
 
 #history-bg{
     background-image: url(history-bg.png);
@@ -116,13 +135,41 @@ nav{
     justify-content: space-between;
 }
 
+.image-carasoul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-cara{
+    margin: 0 5px;
+}
+
+.image-center{
+    justify-content: center;
+}
+
+.circle{
+    background-color: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin: 0 3px;
+}
+
+.nav-circles{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
 
 #mountain-3{
     background-image: url(mountain3.png);
     background-color: #d7dae5;
     background-position:center bottom;
     background-repeat: no-repeat;
-    height:80vh;
+    height:70vh;
     background-size: cover;
 }
 
@@ -138,6 +185,8 @@ nav{
     text-decoration: underline;
     border:none;
     font-size: 20px;
+    height:40px;
+    width: 140px;
 }
 
 .mtn-btn{
@@ -146,6 +195,9 @@ nav{
     border:none;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
+    height:40px;
+    width: 140px;
+
 }
 
 .table{
@@ -178,6 +230,14 @@ tr, td{
     color: #414f6b;
 }
 
+.shadea0{
+    color: #a0a7b5;
+}
+
+.offset40{
+    margin-left: 40px
+}
+
 .opacity{
     opacity: 75%;
 }
@@ -199,6 +259,10 @@ tr, td{
 
 .header{
     text-align: center;
+    position: relative;
+    margin-right: 200px;
+    margin-top: 200px;
+
 }
 
 #carasoul{
@@ -239,7 +303,7 @@ tr, td{
 }
 
 .logo-placement{
-    margin-left: -78px;
+    margin-left: -79px;
     position:relative;
     top: 2.5vh;
     font-size: 22px;
@@ -250,6 +314,8 @@ tr, td{
 
 .copyright{
     font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -276,6 +342,17 @@ tr, td{
         display: block;
     }
 
+    .img-cara{
+        margin: 0 5px;
+        height:50px;
+        width: auto;
+    }
+    .font115{
+        font-size: 60px;
+    }
+    .font124{
+        font-size: 70px;
+    }
 
 }
 
