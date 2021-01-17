@@ -19,33 +19,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;1,900&family=Oswald:wght@700&display=swap" rel="stylesheet">
     
-    <script src="app.js"></script>
+
 </head>
 
 <body>
 
+<!--Nav-->
+    <nav class="sticky nav-background-transparent">
+        <div class="logo">
+            <img src="./Logo.png" class="logo-image">
+            <p class="bebas logo-title hide" id="logo-title"><span class="font21 black">LOSANGELES</span><span class="logo-placement shade41">MOUNTAINS</span></p>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item"><a class="nav-item-transparent" href="#history-section" >01. HISTORY</a></li>
+            <li class="nav-item"><a class="nav-item-transparent" href="#team-section" >02. TEAM</a></li>
+        </ul>
+        <div class="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
 
 <div class="container-fluid">
-
-<!--Nav-->
-        <nav class="sticky">
-            <div class="logo">
-                <img src="./Logo.png" class="logo-image">
-                <p class="bebas logo-title"><span class="font21 black">LOSANGELES</span><span class="logo-placement shade41">MOUNTAINS</span></p>
-            </div>
-            <ul class="nav-links">
-                <li class="nav-item"><a href="#history-section" >01. HISTORY</a></li>
-                <li class="nav-item"><a href="#team-section" >02. TEAM</a></li>
-            </ul>
-            <div class="menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-
 <!--First Section-->
-    <section className="row" id="first-section">
+    <section className="row" id="title-section">
         <div class="row title-position" id="mountain-1">
             <div class="col-12">
                 <div class="header">
@@ -112,38 +111,75 @@
     <section id="mountain-btns">
         <div class="row blue-line">
             <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-2 offset-md-2 offset-sm-2">
-                <button class="mtn-btn-active">MOUNTAIN 1</button>
-                <button class="mtn-btn">MOUNTAIN 2</button>
+                <button class="mtn-btn-active" onclick="scheduleChange(1)" id="mtn1">MOUNTAIN 1</button>
+                <button class="mtn-btn" onclick="scheduleChange(2)" id="mtn2">MOUNTAIN 2</button>
             </div>
         </div>
     </section>
 
     <section id="schedule">
-        <div class="row" id="mountain-3">
+        <div class="row mountain-3" id="schedulemtn">
             <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-2 offset-md-2">
-                <table style="width:75%" class="table">
+                <table style="width:75%" class="show" id="schedule1">
+                    <tr>
+                      <th id="schedule">Schedule</th>
+                    </tr>
+                        <tr>
+                            <td>25 Nov 2016</td>
+                            <td>Vestibulum viverra</td>
+                        </tr>
+                        <tr>
+                            <td>28 Nov 2016</td>
+                            <td>Vestibulum viverra</td>
+                        </tr>
+                        <tr>
+                            <td><br/></td>
+                            <td><br/></td>
+                        </tr>
+                        <tr>
+                            <td>18 Dec 2016</td>
+                            <td>Vestibulum viverra</td>
+                        </tr>
+                        <tr>
+                            <td><br/></td>
+                            <td><br/></td>
+                        </tr>
+                        <tr>
+                            <td>7 Jan 2017</td>
+                            <td>Vestibulum viverra</td>
+                        </tr>
+                  </table>
+
+                  <table style="width:75%" class="hide" id="schedule2">
                     <tr>
                       <th id="schedule">Schedule</th>
                     </tr>
                     <tr>
-                      <td>25 Nov 2016</td>
-                      <td>Vestibulum viverra</td>
+                        <td>17 Nov 2016</td>
+                        <td>Vestibulum viverra</td>
                     </tr>
                     <tr>
-                      <td>28 Nov 2016</td>
-                      <td>Vestibulum viverra</td>
+                        <td><br/></td>
+                        <td><br/></td>
                     </tr>
-                    <tr></tr>
-                    <tr >
-                    <td>18 Dec 2016</td>
-                    <td>Vestibulum viverra</td>
-                    </tr>
-                    <tr></tr>
                     <tr>
-                    <td>7 Jan 2017</td>
-                    <td>Vestibulum viverra</td>
+                        <td>13 Dec 2016</td>
+                        <td>Vestibulum viverra</td>
+                    </tr>
+                    <tr>
+                        <td>28 Dec 2016</td>
+                        <td>Vestibulum viverra</td>
+                    </tr>
+                    <tr>
+                        <td><br/></td>
+                        <td><br/></td>
+                    </tr>
+                    <tr>
+                        <td>9 Feb 2017</td>
+                        <td>Vestibulum viverra</td>
                     </tr>
                   </table>
+
             </div>
         </div>
     </section>
@@ -165,3 +201,6 @@
 
     </div>
 </body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="app.js"></script>

@@ -17,9 +17,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.hide{
-    opacity: 0;
-}
 
 
 
@@ -30,13 +27,29 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: transparent;
     opacity: 100%;
     position: fixed;
     top:0;
     width:100%;
     z-index:900;
 }
+
+.nav-background-transparent{
+    background-color: transparent;
+}
+
+.nav-item-transparent{
+    color:white;
+}
+
+.nav-background-white{
+    background-color: white;
+}
+
+.nav-item-white{
+    color: #414f6b;
+}
+
 
 
 .nav-links{
@@ -53,7 +66,6 @@ nav{
 .nav-links a{
     font-size: 12px;
     text-decoration: none;
-    color:white;
     font-family: 'Lato', cursive;
     font-weight: bold;
     font-style: italic;
@@ -62,7 +74,6 @@ nav{
 .nav-links a:hover{
     color: black;
 }
-
 
 .menu{
     display: none;
@@ -85,6 +96,13 @@ nav{
     padding-left: 5px;
 }
 
+.show{
+    display:block;
+}
+
+.hide{
+    display:none;
+}
 
 /*Section 1 Los Angeles*/
 
@@ -164,8 +182,17 @@ nav{
 }
 
 
-#mountain-3{
+.mountain-3{
     background-image: url(mountain3.png);
+    background-color: #d7dae5;
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    height:70vh;
+    background-size: cover;
+}
+
+.mountain-4{
+    background-image: url(mountain4.png);
     background-color: #d7dae5;
     background-position:center bottom;
     background-repeat: no-repeat;
@@ -200,10 +227,11 @@ nav{
 
 }
 
-.table{
+table{
     background-color: rgba(255,255,255, 0.7);
     margin-top: 10vh;
-    margin-left: 20px;
+    margin-left: 5vh;
+    padding-bottom: 2vh;
 }
 
 .bebas{
@@ -213,6 +241,15 @@ nav{
 tr, td{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+}
+
+td, th{
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+th{
+    padding-top: 1vh;
 }
 
 #schedule{
@@ -274,7 +311,7 @@ tr, td{
 /*Footer CSS*/
 #footer{
     background-color: #414f6b;
-    height: 74px;
+    height: 15vh;
     text-align: center;
     color: #4a5978;
 }
@@ -321,7 +358,6 @@ tr, td{
 
 /* Screen Sizes */
 @media screen and (max-width: 768px){
-
 
     .nav-links{
         position: absolute;
