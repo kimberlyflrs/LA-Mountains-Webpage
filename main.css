@@ -17,10 +17,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
-
-
 /*Nav CSS*/
 nav{
     display: flex;
@@ -49,8 +45,6 @@ nav{
 .nav-item-white{
     color: #414f6b;
 }
-
-
 
 .nav-links{
     display: flex;
@@ -96,6 +90,19 @@ nav{
     padding-left: 5px;
 }
 
+.logo{
+    display: flex;
+}
+
+.logo-placement{
+    margin-left: -79px;
+    position:relative;
+    top: 2.5vh;
+    font-size: 22px;
+}
+
+/*Show or hide element*/
+
 .show{
     display:block;
 }
@@ -107,7 +114,7 @@ nav{
 /*Section 1 Los Angeles*/
 
 #mountain-1{
-    background-image: url(mountains.png);
+    background-image: url(images/mountains1.png);
     background-color: #d7dae5;
     background-position:center top;
     background-repeat: no-repeat;
@@ -138,8 +145,9 @@ nav{
     letter-spacing: 10px;
 }
 
-#history-bg{
-    background-image: url(history-bg.png);
+/*History Section*/
+#history-section{
+    background-image: url(images/history-bg.png);
     background-color: #d7dae5;
     background-position:center top;
     background-repeat: no-repeat;
@@ -153,37 +161,42 @@ nav{
     justify-content: space-between;
 }
 
-.image-carasoul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.section-margin{
+    margin:-6vh 10vh 0vh 10vh;
+    font-size: 16px;
 }
 
-.img-cara{
-    margin: 0 5px;
+.headers{
+    font-size: 135px;
+    font-family: 'Oswald', sans-serif;
 }
 
-.image-center{
-    justify-content: center;
+/*Carousel*/
+#carasoul{
+    height: 30vh;
+    background-color:rgba(65, 79, 107, 0.65);
 }
 
-.circle{
-    background-color: white;
-    height: 6px;
-    width: 6px;
-    border-radius: 100%;
-    margin: 0 3px;
+.carousel-cell {
+    width: auto;
+    height: 135px;
+    margin-right: 10px;
+    counter-increment: carousel-cell;
+  }
+
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    background: #63769d;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: white;
 }
 
-.nav-circles{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-}
-
-
+/*Schedule*/
 .mountain-3{
-    background-image: url(mountain3.png);
+    background-image: url(images/mountain3.png);
     background-color: #d7dae5;
     background-position:center bottom;
     background-repeat: no-repeat;
@@ -192,7 +205,7 @@ nav{
 }
 
 .mountain-4{
-    background-image: url(mountain4.png);
+    background-image: url(images/mountain4.png);
     background-color: #d7dae5;
     background-position:center bottom;
     background-repeat: no-repeat;
@@ -227,15 +240,12 @@ nav{
 
 }
 
+/*Schedule-Table*/
 table{
     background-color: rgba(255,255,255, 0.7);
     margin-top: 10vh;
     margin-left: 5vh;
     padding-bottom: 2vh;
-}
-
-.bebas{
-    font-family: 'bebas neue', sans-serif;
 }
 
 tr, td{
@@ -258,53 +268,22 @@ th{
     font-size: 32px;
 }
 
-.headers{
-    font-size: 135px;
-    font-family: 'Oswald', sans-serif;
-}
-
-.shade41{
-    color: #414f6b;
-}
-
-.shadea0{
-    color: #a0a7b5;
-}
-
-.offset40{
-    margin-left: 40px
-}
-
-.opacity{
-    opacity: 75%;
-}
-
 .title{
     font-size: 32px;
     font-family: 'Oswald', sans-serif;
 }
 
-.position{
-    margin-left: 18vh;
-}
-
 .vertical-center{
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
     text-align: center;
     position: relative;
-    margin-right: 200px;
-    margin-top: 200px;
-
-}
-
-#carasoul{
-    height:195px;
-    background-color:rgba(65, 79, 107, 0.75);
+    margin-right: 35vh;
+    margin-top: 35vh;
 }
 
 
@@ -316,17 +295,23 @@ th{
     color: #4a5978;
 }
 
+.copyright{
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Fonts, Sizes*/
 .lato{
     font-family: 'Lato', cursive;
 }
 
-.light-blue{
-    color: #63769d;
+.bebas{
+    font-family: 'bebas neue', sans-serif;
 }
 
-.section-margin{
-    margin:-6vh 10vh 0vh 10vh;
-    font-size: 16px;
+.light-blue{
+    color: #63769d;
 }
 
 .subtitle{
@@ -335,30 +320,33 @@ th{
     bottom: 4vh;
 }
 
-.logo{
-    display: flex;
-}
-
-.logo-placement{
-    margin-left: -79px;
-    position:relative;
-    top: 2.5vh;
-    font-size: 22px;
-}
 .font21{
     font-size:21px;
 }
 
-.copyright{
-    font-size: 12px;
-    font-weight: bold;
-    font-style: italic;
+table{
+    width: 80%;
+}
+
+.team-center{
+    text-align: center;
+}
+
+.shade41{
+    color: #414f6b;
+}
+
+.shadea0{
+    color: #a0a7b5;
+}
+
+.opacity{
+    opacity: 75%;
 }
 
 
 /* Screen Sizes */
 @media screen and (max-width: 768px){
-
     .nav-links{
         position: absolute;
         right: 0px;
@@ -372,10 +360,16 @@ th{
         transform: translateX(100%);  
     }
     .nav-links li{
-        opacity: 0;
+        color: black !important;
     }
     .menu{
         display: block;
+    }
+
+    .header{
+        text-align: center;
+        margin-right: 10vh;
+        margin-left: 10vh;
     }
 
     .img-cara{
@@ -389,9 +383,36 @@ th{
     .font124{
         font-size: 70px;
     }
-
+    .offset40{
+        margin-left: 2vh
+    }
+    .history-center{
+        text-align: center;
+    }
 }
 
+/*tablets*/
+@media (min-width:769px) and (max-width: 991.98px) { 
+    .offset40{
+        margin-left: 2vh
+    }
+ }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .offset40{
+        margin-left: 8vh
+    }
+    table{
+        width: 90%;
+    }
+ }
+
+ @media (min-width: 1200px){ 
+    .offset40{
+        margin-left: 2vh
+    }
+ }
 
 .nav-active{
     transform: translateX(0%);

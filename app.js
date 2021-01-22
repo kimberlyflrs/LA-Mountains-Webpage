@@ -1,4 +1,3 @@
-//javascript file
 const navSlide = ()=>{
     const menu = document.querySelector('.menu');
     const nav = document.querySelector('.nav-links');
@@ -37,11 +36,10 @@ const navWhite = ()=>{
     /*when the navbar reaches the hiistory section, turn bg white 
     when the navbar is in the title section, turn transparent*/
         var titleBottom = $('#title-section').offset().top + $('#title-section').height();
-
-        $(window).on('scroll',function(){
+        var winWidth = $(window).width();
 
             stop = Math.round($(window).scrollTop());
-            if (stop > titleBottom) {
+            if ((stop > titleBottom) ||(winWidth < 768)) {
                 $('nav').addClass('nav-background-white');
                 $('.nav-links a').addClass('nav-item-white');
                 $('nav').removeClass('nav-background-transparent');
@@ -57,8 +55,8 @@ const navWhite = ()=>{
                 //hide the title
                 $('#logo-title').addClass('hide');
                 $('#logo-title').removeClass('show');
-            }
-        });
+            
+        };
 }
 
 
@@ -97,7 +95,16 @@ const scheduleChange = (schedule) =>{
     }
 }
 
+
 window.onload=function(){
     navSlide();
+    navWhite();
+}
+
+window.onscroll = function(){
+    navWhite();
+}
+
+window.onresize = function(){
     navWhite();
 }
