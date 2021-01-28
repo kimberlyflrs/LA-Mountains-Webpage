@@ -378,16 +378,24 @@ table{
         width: auto;
     }
     .font115{
-        font-size: 60px;
+        font-size: 30px;
     }
     .font124{
-        font-size: 70px;
+        font-size: 40px;
+    }
+    .logo-image{
+        height:40px;
+        width: 40px;
     }
     .offset40{
         margin-left: 2vh
     }
     .history-center{
         text-align: center;
+    }
+    .text-bg{
+        background-color:rgba(255, 255, 255, 0.422);
+        padding:10px;
     }
 }
 
